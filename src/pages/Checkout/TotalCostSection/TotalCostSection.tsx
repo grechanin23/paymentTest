@@ -1,10 +1,12 @@
+import product from 'assets/images/product.jpeg'
+
 function TotalCostSection() {
   return (
     <>
       <div className='right-side-top w-100 d-block'>
         <div className='product-thumb'>
           <span className='cart-item'>1</span>
-          <img src='images/product.jpeg' alt='' className='img-fluid' />
+          <img src={product} alt='' className='img-fluid' />
         </div>
         <div className='product-name w-100 d-block'>Semaglutide</div>
         <div className='product-supply'>1 Month Supply</div>
