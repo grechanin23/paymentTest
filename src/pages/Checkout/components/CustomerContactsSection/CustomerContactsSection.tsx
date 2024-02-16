@@ -21,7 +21,7 @@ function CustomerContactsSection({
         <div className='email-box w-100 d-block'>
           <Input
             label='email'
-            RHForm={customerInfoForm}
+            formHookReturn={customerInfoForm}
             required
             type='email'
             className='form-control checkout'
@@ -57,7 +57,7 @@ function CustomerContactsSection({
             <div className='col-md-6'>
               <Input
                 label='firstName'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -67,7 +67,7 @@ function CustomerContactsSection({
             <div className='col-md-6'>
               <Input
                 label='lastName'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -77,7 +77,7 @@ function CustomerContactsSection({
             <div className='col-md-12'>
               <Input
                 label='address'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -87,7 +87,7 @@ function CustomerContactsSection({
             <div className='col-md-12'>
               <Input
                 label='apartment'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -97,7 +97,7 @@ function CustomerContactsSection({
             <div className='col-md-4'>
               <Input
                 label='city'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -124,7 +124,7 @@ function CustomerContactsSection({
             <div className='col-md-4'>
               <Input
                 label='zipCode'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -134,7 +134,7 @@ function CustomerContactsSection({
             <div className='col-12'>
               <Input
                 label='phone'
-                RHForm={customerInfoForm}
+                formHookReturn={customerInfoForm}
                 required
                 type='tel'
                 className='form-control checkout'

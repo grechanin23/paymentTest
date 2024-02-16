@@ -7,17 +7,17 @@ type InputProps<T extends FieldValues> = DetailedHTMLProps<
   HTMLInputElement
 > & {
   label: Path<T>
-  RHForm: UseFormReturn<T>
+  formHookReturn: UseFormReturn<T>
   withoutFormGroup?: boolean
 }
 
 export function Input<T extends FieldValues>({
   label,
   withoutFormGroup,
-  RHForm,
+  formHookReturn,
   ...restProps
 }: InputProps<T>) {
-  const { control, register } = RHForm
+  const { control, register } = formHookReturn
   const { errors } = useFormState({
     control,
     name: label,
