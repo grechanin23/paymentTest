@@ -39,7 +39,9 @@ export function Input<T extends FieldValues>({
             }),
           })}
         />
-        {errorMessage && typeof errorMessage === 'string' && <span>{errorMessage}</span>}
+        {errorMessage && typeof errorMessage === 'string' && (
+          <span className='text-danger'>{errorMessage}</span>
+        )}
       </div>
     </WithFormGroupWrapper>
   )
