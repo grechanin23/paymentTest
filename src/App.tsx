@@ -1,7 +1,7 @@
 import './assets/styles/payment.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import Checkout from './pages/Checkout/Checkout'
+import Checkout from './pages/Checkout'
 
 function App() {
   return (
