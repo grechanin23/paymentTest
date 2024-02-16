@@ -1,9 +1,7 @@
 import { Breadcrumbs, Footer } from 'components'
 import Logo from 'components/ui/Logo/Logo'
-import TotalCostSection from './TotalCostSection/TotalCostSection'
-import CustomerContactsSection from './CustomerContactsSection/CustomerContactsSection'
+import { CustomerContactsSection, CustomerPaymentSection, TotalCostSection } from './components'
 import { useState } from 'react'
-import CustomerPaymentSection from './CustomerPaymentSection/CustomerPaymentSection'
 import { useForm } from 'react-hook-form'
 import { ICustomerInfoForm } from './types/ICustomerInfoForm'
 

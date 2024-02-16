@@ -1,9 +1,9 @@
 import React from 'react'
-import { statesList } from './data/statesList'
+import { statesList } from '../../data/statesList'
 import { UseFormReturn } from 'react-hook-form'
-import { ICustomerInfoForm } from '../types/ICustomerInfoForm'
+import { ICustomerInfoForm } from '../../types/ICustomerInfoForm'
 import { Input } from 'components/form/Input/Input'
-import ContinueButton from './ContinueButton/ContinueButton'
+import ContinueButton from '../ContinueButton'
 
 function CustomerContactsSection({
   customerInfoForm,
