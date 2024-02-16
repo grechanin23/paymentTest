@@ -13,6 +13,7 @@ function CustomerContactsSection({
   onContinuePaymentClick: () => void
 }) {
   const { register } = customerInfoForm
+
   return (
     <>
       <div className='left-top-row w-100 d-flex flex-wrap justify-content-between'>
@@ -20,11 +21,12 @@ function CustomerContactsSection({
         <div className='email-box w-100 d-block'>
           <Input
             label='email'
-            register={register}
+            RHForm={customerInfoForm}
             required
             type='email'
             className='form-control checkout'
             placeholder='Email'
+            withoutFormGroup
           />
           <div className='checkbox-row w-100 d-block'>
             <label className='control control-checkbox'>
@@ -55,7 +57,7 @@ function CustomerContactsSection({
             <div className='col-md-6'>
               <Input
                 label='firstName'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -65,7 +67,7 @@ function CustomerContactsSection({
             <div className='col-md-6'>
               <Input
                 label='lastName'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -75,7 +77,7 @@ function CustomerContactsSection({
             <div className='col-md-12'>
               <Input
                 label='address'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -85,7 +87,7 @@ function CustomerContactsSection({
             <div className='col-md-12'>
               <Input
                 label='apartment'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -95,7 +97,7 @@ function CustomerContactsSection({
             <div className='col-md-4'>
               <Input
                 label='city'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -122,7 +124,7 @@ function CustomerContactsSection({
             <div className='col-md-4'>
               <Input
                 label='zipCode'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='text'
                 className='form-control checkout'
@@ -132,7 +134,7 @@ function CustomerContactsSection({
             <div className='col-12'>
               <Input
                 label='phone'
-                register={register}
+                RHForm={customerInfoForm}
                 required
                 type='tel'
                 className='form-control checkout'

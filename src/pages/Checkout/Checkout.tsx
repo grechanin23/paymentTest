@@ -6,7 +6,9 @@ import { useForm } from 'react-hook-form'
 import { ICustomerInfoForm } from './types/ICustomerInfoForm'
 
 function Checkout() {
-  const customerInfoForm = useForm<ICustomerInfoForm>()
+  const customerInfoForm = useForm<ICustomerInfoForm>({
+    mode: 'onBlur',
+  })
   const [activeSection, setActiveSection] = useState<'contacts' | 'payment'>('contacts')
   return (
     <div id='wrapper w-100 d-block'>
